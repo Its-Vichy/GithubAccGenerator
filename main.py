@@ -71,7 +71,7 @@ def gen():
 
         l_code = list(code)
 
-        confirm_data = f'authenticity_token={authenticity_token}&recommend_plan=true&plan=&setup_organization=&launch_code%5B%5D={l_code[0]}&launch_code%5B%5D={l_code[1]}&launch_code%5B%5D={l_code[2]}&launch_code%5B%5D={l_code[3]}&launch_code%5B%5D={l_code[4]}&launch_code%5B%5D={l_code[5]}&launch_code%5B%5D={l_code[6]}&launch_code%5B%5D={l_code[7]}'
+        confirm_data = f'authenticity_token={authenticity_token}&recommend_plan=true&plan=&setup_organization=&launch_code%5B%5D={code}'
         print(confirm_data)
 
         session.headers['referer'] = str(response.url)
